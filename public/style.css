@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+ *{
+
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+ 
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.container{
+width:  90% ;
+
+}
+.chatapp{
+    color: grey;
+  border-radius: 10px;
+    width: 800px;
+    background-color: rgba(127, 255, 212, 0.582);
+}
+.image img{
+    border: 2px solid green;
+    width: 50px;
+    border-radius: 30px;
+    margin-right: 12px;
+
+}
+.image{
+    border-bottom: 2px solid brown;
+    color: white;
+    background-color: #892be27e;
+display: flex;
+align-items: center;
+padding: 20px;
+font-size:19px;
+font-weight: bolder;
+
+}
+.message_area{
+
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    overflow-y: auto;
+    height: 400px;
+
+}
+textarea{
+    width: 100%;
+    resize: none;
+    border-radius: 12px;
+    outline: none;
+    padding: 15px;
+    height: 70px;
+    margin-bottom: -10px;
+    background-color: antiquewhite;
+}
+.message{
+    border-radius: 20px;
+    padding: 20px;
+        margin-bottom: 45px;
+        width: 300px;
+
+        position: relative;
+        /* background-color: red; */
+}
+textarea:focus{
+    border:2px solid palegreen ;
+}
+.incoming{
+    background-color: grey;
+    color: white;
+}
+.outgoing{
+    background-color: red;
+    color: white;
+    margin-left: auto;
+
+}
+.message h4{
+    position: absolute;
+    top: -52%;
+    left: 7%;
+    color: green;
+    font-size: 20px;
+    padding-bottom: 12px;
+   
+
+
+}
+
+@media(max-width:824px){
+    .chatapp{
+
+        width: 500px;
+        
+    }
+    .image{
+        flex-direction: column;
+    }
+}
+@media(max-width:509px){
+    body{
+        display:block;
+        margin-top: 12%;
+        
+        
+ 
+    }
+    .chatapp{
+
+        width: 80%;
+        margin:  auto;      
+       
+       
+        
+    }
+    .image{
+        flex-direction: column;
+    }
+}
